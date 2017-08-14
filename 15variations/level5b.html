@@ -7,51 +7,83 @@
 <style>
 
 body {
-  margin-left: 1%;
+margin-top: 50px;
+background-color: #E5E5E5;
+color: #4F4F4F;
+}
+
+.authors {
+  text-align: center;
+  font-family: helvetica;
+  opacity: 1;
+  transition: 2s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.list {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .title {
-  position: fixed;
+  position: relative;
+  margin: auto;
+  text-align: center;
   font-family: helvetica;
-  right:10px;
-  top: 50px;
-  font-size: 20px;
+  transition: 2s;
+  line-height: 200%;
+}
+
+
+ul:hover .title {
   letter-spacing: 10px;
+  cursor: default;
+}
 
-  }
+ul:hover li {
+  opacity: 1;
+}
 
-ol {
-  list-style: none;
+ul:hover .authors {
+  opacity: 0;
 }
 
 li {
-  letter-spacing: -1px;
-  font-size: 100px;
-  font-family: Georgia;
-  padding-top: 250px;
-  padding-bottom: 600px;
+  list-style-type: none;
+  text-align: center;
+  margin: auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  max-width: 700px;
+  font-family: helvetica;
+  opacity: 0;
+  transition: 3s;
 }
 
-
-.authors {
-position: absolute;
-right: 50px;
-top: 80px;
-font-family: helvetica;
-}
 
 </style>
 
   </head>
   <body>
-    <div class="authors">Bre Pettis and Kio Stark</div>
-     <ol>
 
-      <div class="title">THE CULT OF DONE MANIFESTO</div>
 
+
+
+
+    <div id="list">
+
+
+      <ul>
+
+      <div class="authors">Bre Pettis</div>
       <li id="item1">There are three states of being. Not knowing, action and completion.</li>
 
-      <li id="item2">There is no editing stage.</li>
+      <li>Accept that everything is a draft.
+      It helps to get done.</li>
+
+      <li>There is no editing stage.</li>
 
       <li>Pretending</em> you know what you’re doing is almost the same as <em>knowing</em> what you are doing,
       so just accept that you know what you are doing
@@ -62,6 +94,8 @@ font-family: helvetica;
 
       <li>The point of being done is not to finish but
       to get other things done.</li>
+
+          <h1 class="title">THE CULT OF DONE MANIFESTO</h1>
 
       <li>Once you’re done you can throw it away.</li>
 
@@ -80,7 +114,11 @@ font-family: helvetica;
 
       <li id="item13">Done is the engine of more.</li>
 
-    </ol>
+     <div class="authors">Kio Stark</div>
+</ul>
+
 
     </div>
+
+
 </html>

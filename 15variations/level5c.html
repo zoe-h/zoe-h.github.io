@@ -7,51 +7,74 @@
 <style>
 
 body {
-  margin-left: 1%;
+background-color: #F2F2F2;
 }
 
 .title {
-  position: fixed;
-  font-family: helvetica;
-  right:10px;
-  top: 50px;
-  font-size: 20px;
-  letter-spacing: 10px;
+  color: #F2F2F2;
+  font-family: Garamond;
+  padding: 50px 50px 0px 50px;
+  font-size: 100px;
+  text-align: center;
+}
 
-  }
+.authors {
+  font-family: Garamond;
+  font-size: 22px;
+  padding: 0px 50px 50px 50px;
+  text-align: center;
+}
+
+
+.left {
+  margin: -10px 0px 0px -10px;
+  width: 100%;
+  height: 100vh;
+  background-color: #C40000;
+  position: fixed;
+  transition: 2s;
+}
+
+.left:hover {
+  width: 50%;
+  cursor: default;
+}
+
+.right {
+  width: 50%;
+  position: absolute;
+  right: 0px;
+}
 
 ol {
-  list-style: none;
+    padding: 20px 40px 40px 60px;
+
 }
 
 li {
-  letter-spacing: -1px;
-  font-size: 100px;
-  font-family: Georgia;
-  padding-top: 250px;
-  padding-bottom: 600px;
-}
-
-
-.authors {
-position: absolute;
-right: 50px;
-top: 80px;
-font-family: helvetica;
+  font-family: Garamond;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
 </style>
 
   </head>
   <body>
-    <div class="authors">Bre Pettis and Kio Stark</div>
-     <ol>
 
-      <div class="title">THE CULT OF DONE MANIFESTO</div>
 
+
+
+
+
+    <div class="right">
+          <ol>
       <li id="item1">There are three states of being. Not knowing, action and completion.</li>
 
-      <li id="item2">There is no editing stage.</li>
+      <li>Accept that everything is a draft.
+      It helps to get done.</li>
+
+      <li>There is no editing stage.</li>
 
       <li>Pretending</em> you know what you’re doing is almost the same as <em>knowing</em> what you are doing,
       so just accept that you know what you are doing
@@ -62,6 +85,8 @@ font-family: helvetica;
 
       <li>The point of being done is not to finish but
       to get other things done.</li>
+
+
 
       <li>Once you’re done you can throw it away.</li>
 
@@ -79,8 +104,11 @@ font-family: helvetica;
       internet, that counts as a ghost of done.</li>
 
       <li id="item13">Done is the engine of more.</li>
-
     </ol>
-
     </div>
+    <div class="left">
+      <h1 class="title">The Cult of Done  Manifesto</h1>
+          <div class="authors">Bre Pettis and Kio Stark</div>
+    </div>
+
 </html>
