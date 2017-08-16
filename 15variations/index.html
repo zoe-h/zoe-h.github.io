@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+<style media="screen">
+
+body {
+  margin: 0px;
+  cursor: url("assets/images/cursor.png"), default;
+  background-image: url("assets/images/board.jpg");
+  background-size: cover;
+  font-family: monospace;
+}
+
+.bg {
+  width: 80vw;
+  height: 100vh;
+  background: url("assets/images/pizzabase64.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.sidebar {
+  width: 18vw;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+}
+
+
+.sidebar img {
+    width: 40%;
+    vertical-align: middle;
+}
+
+.sidebar span {
+  margin-left: 10px;
+}
+
+
+.pizza img:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  cursor: url("assets/images/cursor.png"), default;
+}
+
+.pizza p {
+  position: absolute;
+  width: 16vw;
+  right: 0px;
+  bottom: 50px;
+  font-family: monospace;
+  font-size: 30px;
+  display: none;
+}
+
+.pineapple1:hover .level1a {
+  display: block;
+}
+
+.pepperoni1 {
+  position: absolute;
+  left: 12%;
+  top: 65%;
+}
+
+.pepperoni2 {
+  position: absolute;
+  left: 40%;
+  top: 10%;
+}
+
+.pepperoni3 {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+}
+
+.pineapple1 {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+.pineapple2 {
+  position: absolute;
+  left: 30%;
+  top: 80%;
+}
+.pineapple3 {
+  position: absolute;
+  left: 55%;
+  top: 20%;
+}
+
+.mushroom1 {
+  position: absolute;
+  left: 30%;
+  top: 10%;
+}
+.mushroom2 {
+  position: absolute;
+  left: 18%;
+  top: 40%;
+}
+.mushroom3 {
+  position: absolute;
+  left: 65%;
+  top: 70%;
+}
+
+.capsicum1 {
+  position: absolute;
+  left: 2%;
+  top: 50%;
+}
+.capsicum2 {
+  position: absolute;
+  left: 30%;
+  top: 55%;
+}
+.capsicum3 {
+  position: absolute;
+  left: 62%;
+  top: 5%;
+}
+
+.basil1 {
+  position: absolute;
+  left: 45%;
+  top: 60%;
+}
+.basil2 {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+.basil3 {
+  position: absolute;
+  left: 35%;
+  top: 35%;
+}
+
+.arrow {
+  position: absolute;
+  transform: scale(0.5);
+  left: 20%;
+  top: 20%;
+}
+
+.starthere {
+  position: absolute;
+  left: 21%;
+  top: 31%;
+}
+
+/*hover */
+
+.pineapple1:hover .level1a {
+  display: block;
+}
+
+</style>
+
+  </head>
+  <body>
+<div class="bg"></div>
+
+<div class="sidebar">
+  <img src="assets/images/pineapple2.png">
+  <span>Level 1</span>
+  <img src="assets/images/mushroom2.png">
+  <span>Level 2</span>
+  <img src="assets/images/pepperoni1.png">
+  <span>Level 3</span>
+  <img src="assets/images/capsicum2.png">
+  <span>Level 4</span>
+  <img src="assets/images/basil1.png">
+  <span>Level 5</span>
+</div>
+
+
+<div class="pizza">
+  <a href="level4a.html"><img class="capsicum1" src="assets/images/capsicum1.png" alt=""></a>
+  <a href="level4b.html"><img class="capsicum2" src="assets/images/capsicum2.png" alt=""></a>
+  <a href="level4c.html"><img class="capsicum3" src="assets/images/capsicum3.png" alt=""></a>
+
+  <a href="level1a.html"><img class="pineapple1" src="assets/images/pineapple1.png" alt=""></a>
+  <a href="level1b.html"><img class="pineapple2" src="assets/images/pineapple2.png" alt=""></a>
+  <a href="level1c.html"><img class="pineapple3" src="assets/images/pineapple3.png" alt=""></a>
+
+  <a href="level3a.html"><img class="pepperoni1" src="assets/images/pepperoni1.png" alt=""></a>
+  <a href="level3b.html"><img class="pepperoni2" src="assets/images/pepperoni2.png" alt=""></a>
+  <a href="level3c.html"><img class="pepperoni3" src="assets/images/pepperoni3.png" alt=""></a>
+
+  <a href="level2a.html"><img class="mushroom1" src="assets/images/mushroom1.png" alt=""></a>
+  <a href="level2b.html"><img class="mushroom2" src="assets/images/mushroom2.png" alt=""></a>
+  <a href="level2c.html"><img class="mushroom3" src="assets/images/mushroom3.png" alt=""></a>
+
+  <a href="level5a.html"><img class="basil1" src="assets/images/basil1.png" alt=""></a>
+  <a href="level5b.html"><img class="basil2" src="assets/images/basil2.png" alt=""></a>
+  <a href="level5c.html"><img class="basil3" src="assets/images/basil3.png" alt=""></a>
+
+  <img class="arrow" src="assets/images/arrow.png">
+  <div class="starthere">Start here</div>
+
+  <p class="level1a">Level 1a</p>
+</div>
+
+  </body>
+</html>
