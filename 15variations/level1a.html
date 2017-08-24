@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+<script src="jquery-3.2.1.min.js"></script>
+
     <title></title>
   </head>
 
@@ -21,10 +23,18 @@
 }
 
 
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
 
 </style>
 
-  <body>
+  <body class="fade-out">
 
 
     <script>
@@ -33,8 +43,8 @@
     </script>
 
   <div class="nav">
-    <a href="index.html"><img src="assets/images/nav-prev.png"></a><br>
-    <a href="level1b.html"><img src="assets/images/nav-next.png"></a><br>
+    <a href="index.html"><img id="nav-prev" src="assets/images/nav-prev.png"></a><br>
+    <a href="level1b.html"><img id="nav-next" src="assets/images/nav-next.png"></a><br>
     <p>&nbsp;<a href="index.html">Home</a></p>
   </div>
 
@@ -83,4 +93,15 @@
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; that counts as a ghost of done.
 <p><br>
 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 13. Done is the engine of more.
+
+</body>
+<script>
+document.body.className += ' fade-out';
+
+$(function() {
+    $('body').removeClass('fade-out');
+});
+</script>
+
+
 </html>

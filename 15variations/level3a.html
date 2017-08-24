@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+        <script src="jquery-3.2.1.min.js"></script>
     <title></title>
 
 <style>
@@ -44,6 +45,16 @@ h1 {
 .nav a {
   text-decoration: none;
 }
+
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
 
 </style>
 
@@ -96,5 +107,13 @@ h1 {
       <a href="level3b.html"><img src="assets/images/nav-next.png"></a></br>
       <p>&nbsp;<a href="index.html">Home</a></p>
     </div>
+  </body>
+  <script>
+  document.body.className += ' fade-out';
+
+  $(function() {
+      $('body').removeClass('fade-out');
+  });
+  </script>
 
 </html>

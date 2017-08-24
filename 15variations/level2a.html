@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+        <script src="jquery-3.2.1.min.js"></script>
     <title></title>
 
     <style media="screen">
@@ -16,6 +17,15 @@
       }
     .nav a {
       text-decoration: none;
+    }
+
+    body {
+        opacity: 1;
+        transition: 1s opacity;
+    }
+    body.fade-out {
+        opacity: 0;
+        transition: none;
     }
 
     </style>
@@ -176,4 +186,13 @@
         <h1><div><h2>
           13. Done is the engine of more.
     <h1><a href="#start">☝<a></h2></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+<script>
+document.body.className += ' fade-out';
+
+$(function() {
+    $('body').removeClass('fade-out');
+});
+</script>
+
 </html>

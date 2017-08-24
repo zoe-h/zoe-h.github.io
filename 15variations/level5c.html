@@ -2,9 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
+        <script src="jquery-3.2.1.min.js"></script>
     <title></title>
 
 <style>
+
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
 
 body {
 background-color: #F2F2F2;
@@ -127,5 +138,14 @@ li {
       <a href="level5b.html"><img src="assets/images/nav-prev.png"></a></br>
       <p>&nbsp;<a href="index.html">Home</a></p>
     </div>
+  </body>
+
+  <script>
+  document.body.className += ' fade-out';
+
+  $(function() {
+      $('body').removeClass('fade-out');
+  });
+  </script>
 
 </html>

@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+        <script src="jquery-3.2.1.min.js"></script>
     <title></title>
 
 
@@ -17,6 +18,16 @@
       }
     .nav a {
       text-decoration: none;
+    }
+
+
+    body {
+        opacity: 1;
+        transition: 1s opacity;
+    }
+    body.fade-out {
+        opacity: 0;
+        transition: none;
     }
 
     </style>
@@ -70,4 +81,12 @@
       internet, that counts as a ghost of done.</li></div></div></div>
       <br><br>
       <div><h1><div><h1><div><h1><li>Done is the engine of more.</li></div>
+</body>
+<script>
+document.body.className += ' fade-out';
+
+$(function() {
+    $('body').removeClass('fade-out');
+});
+</script>
 </html>

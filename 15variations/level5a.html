@@ -2,9 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
+        <script src="jquery-3.2.1.min.js"></script>
     <title></title>
 
     <style media="screen">
+
+    body {
+        opacity: 1;
+        transition: 1s opacity;
+    }
+    body.fade-out {
+        opacity: 0;
+        transition: none;
+    }
+
 
     .nav {
         position: fixed;
@@ -457,4 +468,13 @@ top: 300px;
         <div class="circle circle13"></div>
         <li class="item item13">Done is the engine of more.</li>
       </div>
+    </body>
+
+    <script>
+    document.body.className += ' fade-out';
+
+    $(function() {
+        $('body').removeClass('fade-out');
+    });
+    </script>
 </html>

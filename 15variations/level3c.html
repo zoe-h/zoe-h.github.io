@@ -2,9 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
+        <script src="jquery-3.2.1.min.js"></script>
     <title></title>
 
 <style>
+
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
 
 body {
   margin: -20px 80px 20px 80px;
@@ -114,5 +125,15 @@ margin-left: 60%;
 
       <div class="item odd">Done is the engine of more. <a href="#topofpage">🚀</a></div>
       <div class="authors"><em>Bre Pettis and Kio Stark</em></div>
+
+</body>
+
+<script>
+document.body.className += ' fade-out';
+
+$(function() {
+    $('body').removeClass('fade-out');
+});
+</script>
 
 </html>

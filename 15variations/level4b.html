@@ -2,9 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
+        <script src="jquery-3.2.1.min.js"></script>
     <title></title>
 
 <style>
+
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
 
 body {
   margin-left: 1%;
@@ -100,6 +111,13 @@ font-family: helvetica;
       <li id="item13">Done is the engine of more.</li>
 
     </ol>
-
     </div>
+  </body>
+  <script>
+  document.body.className += ' fade-out';
+
+  $(function() {
+      $('body').removeClass('fade-out');
+  });
+  </script>
 </html>
