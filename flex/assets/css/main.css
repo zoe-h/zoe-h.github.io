@@ -88,11 +88,12 @@ body {
 
 .item img {
   max-width: 100%;
+  cursor: url('../images/cursor/smiley.png'), auto;
 
 }
 
 .item img:hover {
-  cursor: url('../images/cursor/smiley.png'), auto;
+
 }
 
 .reveal {
