@@ -1,4 +1,4 @@
-* {
+m* {
   box-sizing: border-box;
 }
 
@@ -8,6 +8,7 @@
 body {
   background-color: white;
   font-family: helvetica;
+  margin: 0;
 }
 
 
