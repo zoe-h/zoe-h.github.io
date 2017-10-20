@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Doomsday Clock</title>
+    <!-- Require these to reset browser styles and debugging -->
+    <link rel="stylesheet" href="assets/css/_normalize.css">
+    <link rel="stylesheet" href="assets/css/_debug.css">
+
+    <!-- Add custom styles here -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/time.css">
+
+    <!-- Require these for JS -->
+    <script src="assets/js/jquery-3.2.0.min.js" charset="utf-8"></script>
+    <script src="assets/js/moment-with-locales.min.js" charset="utf-8"></script>
+    <script src="assets/js/time.js" charset="utf-8"></script>
+    <script src="assets/js/scrollmagic/ScrollMagic.min.js"></script>
+    <script src="assets/js/scrollmagic/plugins/debug.addIndicators.min.js"></script>
+    <script src="assets/js/baffle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+
+
+    <!-- Add custom JS here -->
+    <script src="assets/js/main.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <!-- Start here -->
+
+  <div class="time_wrapper">
+      <div class="time"></div>
+  </div>
+
+  <div class="time_countdown">
+      <div class="time"></div>
+      <div class="time"></div>
+      <div class="time"></div>
+      <div class="time"></div>
+      <div class="time"></div>
+  </div>
+
+
+  <div class="nav">
+    <div id="nav1">1</div>
+    <div id="nav2">2</div>
+    <div id="nav3">3</div>
+    <div id="nav4">4</div>
+    <div id="nav5">5</div>
+    <div id="nav6">6</div>
+  </div>
+
+  <section id="section1" class="panel">
+    <div class="image_error">
+      <img src="assets/images/image_error_1.svg" alt="">
+    </div>
+  	<div class="header">The Doomsday Clock symbolises the likelihood of a man-made global catastrophe.</div>
+  </section>
+
+  <section id="section2" class="panel">
+  	<div class="header">
+  	  In 2017 the clock was set to the closest time to midnight in 64 years: 2 and a half minutes.
+  	</div>
+    <div class="image_error">
+      <img src="assets/images/image_error_1.svg" alt="">
+    </div>
+  </section>
+
+  <section id="section3" class="panel">
+    <div class="header">
+  	  Timeline
+  	</div>
+    <canvas id="timeline_chart"></canvas>
+  </section>
+
+  <section id="section4" class="panel">
+    <div class="header_wrapper">
+      <div class="threat">
+        THREAT #1
+      </div>
+      <div class="header">
+    	  Nuclear War
+    	</div>
+    </div>
+    <div class="description">
+      Progress in reducing the overall threat of nuclear war has stalled—and in many ways, gone into reverse. This state of affairs poses a clear and urgent threat to civilization, and citizens around the world should demand that their leaders quickly address and lessen the danger.
+    </div>
+  </section>
+
+  <section id="section5" class="panel">
+    <div class="header_wrapper">
+      <div class="threat">
+        THREAT #2
+      </div>
+      <div class="header">
+        Climate Change
+      </div>
+    </div>
+
+    <div class="description">
+      The continued warming of the world measured in 2016 underscores one clear fact: Nothing is fundamentally amiss with the scientific understanding of climate physics. However, the the progress to a zero-carbon-emissions world has stagnated.
+    </div>
+  </section>
+
+  <section id="section6" class="panel">
+    <div class="header_wrapper">
+      <div class="threat">
+        THREAT #3
+      </div>
+      <div class="header">
+        Emerging Technologies
+      </div>
+    </div>
+    <div class="description">
+      Technological innovation is occurring at a speed that challenges society’s ability to keep pace. While limited at the current time, potentially existential threats posed by a host of emerging technologies need to be monitored, and to the extent possible anticipated, as the 21st century unfolds.
+    </div>
+  </section>
+
+
+    <!-- remove later, used for debugging -->
+    <button type="button" id="pause" name="button">Pause</button>
+    <textarea id="timeClasses" name="name" rows="2" cols="40">evenS oddS evenM oddM halfM fullM quarterH halfH threequarterH fullH am pm
+    </textarea>
+
+  </body>
+    <script src="assets/js/chart.js"></script>
+</html>

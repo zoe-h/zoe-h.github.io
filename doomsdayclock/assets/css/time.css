@@ -1,0 +1,91 @@
+/* time countdown */
+
+body.h11m57.pm .time_wrapper {
+  display: none;
+}
+
+body .time_countdown {
+  display: none;
+}
+
+body.h11.m57.pm .time_countdown, body.h11.m58.pm .time_countdown {
+  display: block;
+  z-index: 99999999;
+}
+
+/* 11:57:30 */
+
+body.h11.m57.evenS.pm .panel,
+body.h11.m58.evenS.pm .panel,
+body.h11.m59.evenS.pm .panel {
+  background-color: red !important;
+}
+
+
+/* 11:58:00 */
+
+/* 11:58:30 */
+
+body.h11.m58.pm {
+  font-family: serif !important;
+  padding: 0px;
+}
+
+body.h11.m58.pm #section1 {
+  background-color: white;
+  background-image: none;
+  color: black;
+}
+
+body.h11.m58.pm .panel#section2, body.h11.m58.pm .panel#section3, body.h11.m58.pm .panel#section4, body.h11.m58.pm .panel#section5, body.h11.m58.pm .panel#section6 {
+  background-color: transparent !important;
+  background-image: none;
+  color: black;
+}
+
+.image_error {
+  width: 400px;
+  display: none;
+}
+
+#section2 .image_error {
+  margin-left: 300px;
+}
+
+body.h11.m58.pm .image_error {
+  display: block;
+}
+
+body.h11.m58.pm .nav {
+  position: relative;
+  transform: none;
+  color: blue;
+  width: 100%;
+  text-align: left;
+  padding: 30px;
+}
+
+body.h11.m58.pm .nav div {
+  display: inline-block;
+  opacity: 1;
+  font-size: 20px;
+}
+
+body.h11.m58.pm #timeline_chart {
+  display: none !important;
+}
+
+/* 11:59:00 */
+
+body.h11.m59.pm .panel {
+  font-size: 30px !important;
+}
+
+/* 11:59:30 */
+
+/* 11:59:30 */
+
+body.h12.m0.am {
+  display: none;
+  background-color: red;
+}
