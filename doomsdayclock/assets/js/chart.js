@@ -44,21 +44,22 @@ var scatterChart = new Chart(ctx, {
             xAxes: [{
                 type: 'linear',
                 position: 'bottom',
+                gridlines: {
+                  color: '#00F',
+                },
                 ticks: {
                   stepSize: 5,
                   min: 1947,
                   max: 2017,
+                  fontColor: '#00F',
                 }
             }],
             yAxes: [{
               ticks: {
                 min: 0,
-                color: 'rgb(255, 255, 255)',
+                fontColor: '#00F',
               }
             }],
-            gridLines: [{
-              color: 'rgba(255, 255, 255, 0.2)',
-            }]
         },
         tooltips: {
         },

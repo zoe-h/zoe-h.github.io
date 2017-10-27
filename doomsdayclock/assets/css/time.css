@@ -1,6 +1,6 @@
-/* time countdown */
+/* 11:57:30 */
 
-body.h11m57.pm .time_wrapper {
+body.h11.m57.fullM.pm .time_wrapper, body.h11.m58.pm .time_wrapper, body.h11.m59.pm .time_wrapper {
   display: none;
 }
 
@@ -8,14 +8,12 @@ body .time_countdown {
   display: none;
 }
 
-body.h11.m57.pm .time_countdown, body.h11.m58.pm .time_countdown {
+body.h11.m57.fullM.pm .time_countdown, body.h11.m58.pm .time_countdown, body.h11.m59.pm .time_countdown {
   display: block;
   z-index: 99999999;
 }
 
-/* 11:57:30 */
-
-body.h11.m57.evenS.pm .panel,
+body.h11.m57.fullM.evenS.pm .panel,
 body.h11.m58.evenS.pm .panel,
 body.h11.m59.evenS.pm .panel {
   background-color: red !important;
@@ -24,24 +22,49 @@ body.h11.m59.evenS.pm .panel {
 
 /* 11:58:00 */
 
+body.h11.m58.pm #section1, body.h11.m58.pm .panel#section2, body.h11.m58.pm .panel#section3, body.h11.m58.pm .panel#section4, body.h11.m58.pm .panel#section5, body.h11.m58.pm .panel#section6 {
+  background-color: transparent;
+  color: black;
+}
+
+body.h11.m59.pm #section1, body.h11.m59.pm .panel#section2, body.h11.m59.pm .panel#section3, body.h11.m59.pm .panel#section4, body.h11.m59.pm .panel#section5, body.h11.m59.pm .panel#section6 {
+  background-color: transparent;
+  color: black;
+}
+
 /* 11:58:30 */
 
-body.h11.m58.pm {
+body.h11.m58.fullM.pm, body.h11.m59.pm {
   font-family: serif !important;
   padding: 0px;
 }
 
-body.h11.m58.pm #section1 {
-  background-color: white;
-  background-image: none;
-  color: black;
+body.h11.m58.fullM.pm .nav, body.h11.m59.pm .nav {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  transform: none;
+  color: blue;
+  width: 100%;
+  text-align: left;
 }
 
-body.h11.m58.pm .panel#section2, body.h11.m58.pm .panel#section3, body.h11.m58.pm .panel#section4, body.h11.m58.pm .panel#section5, body.h11.m58.pm .panel#section6 {
-  background-color: transparent !important;
-  background-image: none;
-  color: black;
+body.h11.m58.fullM.pm .nav div, body.h11.m59.pm .nav div {
+  display: inline-block;
+  opacity: 1;
+  font-size: 40px;
 }
+
+body.h11.m58.fullM.pm #timeline_chart, body.h11.m59.pm #timeline_chart {
+  display: none !important;
+}
+
+/* 11:59:00 */
+
+body.h11.m59.pm #section1, body.h11.m59.pm .panel#section2, body.h11.m59.pm .panel#section3, body.h11.m59.pm .panel#section4, body.h11.m59.pm .panel#section5, body.h11.m59.pm .panel#section6 {
+  background-image: none;
+}
+
 
 .image_error {
   width: 400px;
@@ -52,36 +75,44 @@ body.h11.m58.pm .panel#section2, body.h11.m58.pm .panel#section3, body.h11.m58.p
   margin-left: 300px;
 }
 
-body.h11.m58.pm .image_error {
+#section3 .image_error {
+  margin-left: 500px;
+}
+
+#section4 .image_error {
+  margin-left: 200px;
+}
+
+#section5 .image_error {
+  margin-left: 700px;
+}
+
+#section6 .image_error {
+  margin-left: 800px;
+}
+
+body.h11.m59.pm .image_error {
   display: block;
 }
 
-body.h11.m58.pm .nav {
-  position: relative;
-  transform: none;
-  color: blue;
-  width: 100%;
-  text-align: left;
-  padding: 30px;
-}
-
-body.h11.m58.pm .nav div {
-  display: inline-block;
-  opacity: 1;
-  font-size: 20px;
-}
-
-body.h11.m58.pm #timeline_chart {
-  display: none !important;
-}
-
-/* 11:59:00 */
-
-body.h11.m59.pm .panel {
-  font-size: 30px !important;
-}
-
 /* 11:59:30 */
+
+
+body.h11.m59.fullM .header {
+  transition: 0s;
+  letter-spacing: 30px;
+  word-spacing: 30px;
+  font-size: 30px !important;
+  text-transform: uppercase;
+}
+
+body.h11.m59.fullM .description {
+  width: 100%;
+  letter-spacing: 10px;
+  word-spacing: 30px;
+  text-transform: uppercase;
+}
+
 
 /* 11:59:30 */
 

@@ -22,7 +22,6 @@ $(document).ready(function() {
                 triggerElement: slides[i]
               })
               .setPin(slides[i])
-    //          .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
           }
         });
@@ -75,40 +74,33 @@ $(document).ready(function() {
       // build scenes
       new ScrollMagic.Scene({triggerElement: "#section1"})
               .setClassToggle("#nav1", "nav_active") // add class toggle
-        //      .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
       new ScrollMagic.Scene({triggerElement: "#section2"})
               .setClassToggle("#nav2", "nav_active") // add class toggle
-      //        .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
       new ScrollMagic.Scene({triggerElement: "#section3"})
               .setClassToggle("#nav3", "nav_active") // add class toggle
-      //        .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
       new ScrollMagic.Scene({triggerElement: "#section4"})
               .setClassToggle("#nav4", "nav_active") // add class toggle
-      //        .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
       new ScrollMagic.Scene({triggerElement: "#section5"})
               .setClassToggle("#nav5", "nav_active") // add class toggle
-      //        .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
       new ScrollMagic.Scene({triggerElement: "#section6"})
               .setClassToggle("#nav6", "nav_active") // add class toggle
-      //        .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
 
+// nav - active - blue
 
       var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});
       new ScrollMagic.Scene({triggerElement: "#section3"})
               .setClassToggle(".nav", "nav_blue") // add class toggle
-          //    .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
 
       var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});
       new ScrollMagic.Scene({triggerElement: "#section5"})
               .setClassToggle(".nav", "nav_blue") // add class toggle
-          //    .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
 
 
@@ -121,7 +113,6 @@ $(document).ready(function() {
       // build scenes
       new ScrollMagic.Scene({triggerElement: "#section4"})
               .setClassToggle("#section4 .threat", "show_threat") // add class toggle
-      //        .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
 
 
@@ -130,7 +121,6 @@ $(document).ready(function() {
       // build scenes
       new ScrollMagic.Scene({triggerElement: "#section4"})
               .setClassToggle("#section4 .description", "show_description") // add class toggle
-      //        .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
 
   //section5
@@ -140,15 +130,6 @@ $(document).ready(function() {
       // build scenes
       new ScrollMagic.Scene({triggerElement: "#section5"})
               .setClassToggle("#section5 .threat", "show_threat") // add class toggle
-      //        .addIndicators() // add indicators (requires plugin)
-              .addTo(controller);
-
-      var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});
-
-      // build scenes
-      new ScrollMagic.Scene({triggerElement: "#section5"})
-              .setClassToggle("#section5 .header", "show_header") // add class toggle
-      //        .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
 
       var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});
@@ -156,23 +137,136 @@ $(document).ready(function() {
       // build scenes
       new ScrollMagic.Scene({triggerElement: "#section5"})
               .setClassToggle("#section5 .description", "show_description") // add class toggle
-      //        .addIndicators() // add indicators (requires plugin)
+              .addTo(controller);
+
+  //section5
+
+      var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});
+
+      // build scenes
+      new ScrollMagic.Scene({triggerElement: "#section6"})
+              .setClassToggle("#section6 .threat", "show_threat") // add class toggle
+              .addTo(controller);
+
+      var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});
+
+      // build scenes
+      new ScrollMagic.Scene({triggerElement: "#section6"})
+              .setClassToggle("#section6 .description", "show_description") // add class toggle
               .addTo(controller);
 
 
   // baffle header
 
-          let b = baffle('#section1 .header', {
-              characters: '_',
-              speed: 80
-          });
+      let b1 = baffle('#section1 .header', {
+          characters: '_',
+          speed: 40
+      });
 
-          b.start();
-          b.reveal(1000);
+      let b2 = baffle('#section2 .header', {
+          characters: '_',
+          speed: 40
+      });
+
+      let b3 = baffle('#section3 .header', {
+          characters: '_',
+          speed: 40
+      });
+
+      let b4 = baffle('#section4 .header', {
+          characters: '_',
+          speed: 40
+      });
+      let b5 = baffle('#section5 .header', {
+          characters: '_',
+          speed: 40
+      });
+      let b6 = baffle('#section6 .header', {
+          characters: '_',
+          speed: 40
+      });
 
 
 
+       var ctrl = new ScrollMagic.Controller();
 
+       // create scene
+       var scene = new ScrollMagic.Scene({
+               triggerElement: "#section1 .header"
+           })
+           .on('start', function () {
+             b1.start();
+             b1.reveal(1000);
+           })
+           .addTo(ctrl);
 
+       var ctrl = new ScrollMagic.Controller();
+
+       // create scene
+       var scene = new ScrollMagic.Scene({
+               triggerElement: "#section2"
+           })
+           .on('start', function () {
+             b2.start();
+             b2.reveal(1000);
+           })
+           .addTo(ctrl);
+
+       var scene = new ScrollMagic.Scene({
+               triggerElement: "#section3"
+           })
+           .on('start', function () {
+             b3.start();
+             b3.reveal(1000);
+           })
+           .addTo(ctrl);
+
+       var scene = new ScrollMagic.Scene({
+               triggerElement: "#section4"
+           })
+           .on('start', function () {
+             b4.start();
+             b4.reveal(1000);
+           })
+           .addTo(ctrl);
+
+       var scene = new ScrollMagic.Scene({
+               triggerElement: "#section5"
+           })
+           .on('start', function () {
+             b5.start();
+             b5.reveal(1000);
+           })
+           .addTo(ctrl);
+
+       var scene = new ScrollMagic.Scene({
+               triggerElement: "#section6"
+           })
+           .on('start', function () {
+             b6.start();
+             b6.reveal(1000);
+           })
+           .addTo(ctrl);
+
+  // show header
+
+      var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});
+
+      // build scenes
+      new ScrollMagic.Scene({triggerElement: "#section2"})
+              .setClassToggle("#section2 .header", "show_header") // add class toggle
+              .addTo(controller);
+      new ScrollMagic.Scene({triggerElement: "#section3"})
+              .setClassToggle("#section3 .header", "show_header") // add class toggle
+              .addTo(controller);
+      new ScrollMagic.Scene({triggerElement: "#section4"})
+              .setClassToggle("#section4 .header", "show_header") // add class toggle
+              .addTo(controller);
+      new ScrollMagic.Scene({triggerElement: "#section5"})
+              .setClassToggle("#section5 .header", "show_header") // add class toggle
+              .addTo(controller);
+      new ScrollMagic.Scene({triggerElement: "#section6"})
+              .setClassToggle("#section6 .header", "show_header") // add class toggle
+              .addTo(controller);
 
   });
