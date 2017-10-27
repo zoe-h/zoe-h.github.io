@@ -27,15 +27,7 @@ $(document).ready(function() {
           }
         });
 
-// baffle header
 
-        let b = baffle('#section1 .header', {
-            characters: '_',
-            speed: 80
-        });
-
-        b.start();
-        b.reveal(1000);
 
 //nav - scroll
 
@@ -113,8 +105,25 @@ $(document).ready(function() {
           //    .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
 
+      var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});
+      new ScrollMagic.Scene({triggerElement: "#section5"})
+              .setClassToggle(".nav", "nav_blue") // add class toggle
+          //    .addIndicators() // add indicators (requires plugin)
+              .addTo(controller);
+
 
 // animate text
+
+  //section4
+
+      var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});
+
+      // build scenes
+      new ScrollMagic.Scene({triggerElement: "#section4"})
+              .setClassToggle("#section4 .threat", "show_threat") // add class toggle
+      //        .addIndicators() // add indicators (requires plugin)
+              .addTo(controller);
+
 
       var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});
 
@@ -123,6 +132,47 @@ $(document).ready(function() {
               .setClassToggle("#section4 .description", "show_description") // add class toggle
       //        .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
+
+  //section5
+
+      var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});
+
+      // build scenes
+      new ScrollMagic.Scene({triggerElement: "#section5"})
+              .setClassToggle("#section5 .threat", "show_threat") // add class toggle
+      //        .addIndicators() // add indicators (requires plugin)
+              .addTo(controller);
+
+      var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});
+
+      // build scenes
+      new ScrollMagic.Scene({triggerElement: "#section5"})
+              .setClassToggle("#section5 .header", "show_header") // add class toggle
+      //        .addIndicators() // add indicators (requires plugin)
+              .addTo(controller);
+
+      var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});
+
+      // build scenes
+      new ScrollMagic.Scene({triggerElement: "#section5"})
+              .setClassToggle("#section5 .description", "show_description") // add class toggle
+      //        .addIndicators() // add indicators (requires plugin)
+              .addTo(controller);
+
+
+  // baffle header
+
+          let b = baffle('#section1 .header', {
+              characters: '_',
+              speed: 80
+          });
+
+          b.start();
+          b.reveal(1000);
+
+
+
+
 
 
   });

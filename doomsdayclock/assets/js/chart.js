@@ -35,7 +35,7 @@ var scatterChart = new Chart(ctx, {
             backgroundColor: 'rgba(0, 0, 255, 0.6)',
             steppedLine: true,
             pointHitRadius: 10,
-            pointHoverRadius: 10,
+            pointHoverRadius: 20,
             pointHoverBorderWidth: 3,
         }]
     },
@@ -53,6 +53,7 @@ var scatterChart = new Chart(ctx, {
             yAxes: [{
               ticks: {
                 min: 0,
+                color: 'rgb(255, 255, 255)',
               }
             }],
             gridLines: [{
@@ -60,9 +61,6 @@ var scatterChart = new Chart(ctx, {
             }]
         },
         tooltips: {
-          intersect: false,
-          mode: 'index',
-          position: 'nearest',
         },
         legend: {
           display: false,
