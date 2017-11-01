@@ -106,6 +106,15 @@ $(document).ready(function() {
 
 // animate text
 
+  //section3
+
+      var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});
+
+      // build scenes
+      new ScrollMagic.Scene({triggerElement: "#section3"})
+              .setClassToggle("#timeline_chart", "show_chart") // add class toggle
+              .addTo(controller);
+
   //section4
 
       var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: section2_top}});

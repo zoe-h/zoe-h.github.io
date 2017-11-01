@@ -144,8 +144,14 @@ body {
 }
 
 #timeline_chart {
-
   padding-top: 40px;
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.show_chart {
+  opacity: 1 !important;
+  transition: 1.5s;
 }
 
 
