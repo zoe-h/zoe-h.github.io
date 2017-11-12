@@ -7,6 +7,8 @@
 
 /* Start here */
 
+
+
 /* images */
 
 #whittakers {
@@ -113,10 +115,10 @@ body {
   color: white;
 }
 
-.contact {
+.info {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  top: 20px;
+  right: 20px;
   font-size: 30px;
   cursor: url('../images/cursor_circle_white.png') 9 9, auto;
   z-index: 2;
@@ -162,10 +164,18 @@ img.hide_img {
   transition: 0.2s;
 }
 
-img.hide_img_contact {
+img.hide_img_info {
   display: none;
 }
 
 .white_cursor {
   cursor: url('../images/cursor_white.png') 50 50, auto !important;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .projects img {
+        position: relative;
+        width: 600px;
+    }
 }
