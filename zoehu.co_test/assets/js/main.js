@@ -1,86 +1,87 @@
 $(document).ready(function() {
-
+   $(window).resize();
 
 // Add jQuery here
 
 
  //image hover
+ $(window).resize(function() {
+   if ($(this).width() > 768) {
 
- $('#whittakers').mouseenter(function() {
-   $('img').addClass('hide_img');
-   $('#whittakers').removeClass('hide_img');
-   $('body').addClass('whittakers_bg');
- });
+     $('#whittakers').mouseenter(function() {
+       $('img').addClass('hide_img');
+       $('#whittakers').removeClass('hide_img');
+       $('body').addClass('whittakers_bg');
+     });
 
- $('#whittakers').mouseleave(function() {
-   $('img').removeClass('hide_img');
-   $('body').removeClass('whittakers_bg');
- });
+     $('#whittakers').mouseleave(function() {
+       $('img').removeClass('hide_img');
+       $('body').removeClass('whittakers_bg');
+     });
 
+      $('#lynch').mouseenter(function() {
+        $('img').addClass('hide_img');
+        $('#lynch').removeClass('hide_img');
+        $('body').addClass('lynch_bg');
+      });
 
+      $('#lynch').mouseleave(function() {
+        $('img').removeClass('hide_img');
+        $('body').removeClass('lynch_bg');
+      });
 
-  $('#lynch').mouseenter(function() {
-    $('img').addClass('hide_img');
-    $('#lynch').removeClass('hide_img');
-    $('body').addClass('lynch_bg');
-  });
+      $('#wander').mouseenter(function() {
+        $('img').addClass('hide_img');
+        $('#wander').removeClass('hide_img');
+        $('body').addClass('wander_bg');
+      });
 
-  $('#lynch').mouseleave(function() {
-    $('img').removeClass('hide_img');
-    $('body').removeClass('lynch_bg');
-  });
+      $('#wander').mouseleave(function() {
+        $('img').removeClass('hide_img');
+        $('body').removeClass('wander_bg');
+      });
 
-  $('#wander').mouseenter(function() {
-    $('img').addClass('hide_img');
-    $('#wander').removeClass('hide_img');
-    $('body').addClass('wander_bg');
-  });
+      $('#graphicdesign').mouseenter(function() {
+        $('img').addClass('hide_img');
+        $('#graphicdesign').removeClass('hide_img');
+        $('body').addClass('graphicdesign_bg');
+      });
 
-  $('#wander').mouseleave(function() {
-    $('img').removeClass('hide_img');
-    $('body').removeClass('wander_bg');
-  });
-
-  $('#graphicdesign').mouseenter(function() {
-    $('img').addClass('hide_img');
-    $('#graphicdesign').removeClass('hide_img');
-    $('body').addClass('graphicdesign_bg');
-  });
-
-  $('#graphicdesign').mouseleave(function() {
-    $('img').removeClass('hide_img');
-    $('body').removeClass('graphicdesign_bg');
-  });
-
-
-  $('#sock').mouseenter(function() {
-    $('img').addClass('hide_img');
-    $('#sock').removeClass('hide_img');
-    $('body').addClass('sock_bg');
-  });
-
-  $('#sock').mouseleave(function() {
-    $('img').removeClass('hide_img');
-    $('body').removeClass('sock_bg');
-  });
+      $('#graphicdesign').mouseleave(function() {
+        $('img').removeClass('hide_img');
+        $('body').removeClass('graphicdesign_bg');
+      });
 
 
+      $('#sock').mouseenter(function() {
+        $('img').addClass('hide_img');
+        $('#sock').removeClass('hide_img');
+        $('body').addClass('sock_bg');
+      });
 
-  // about / contact
+      $('#sock').mouseleave(function() {
+        $('img').removeClass('hide_img');
+        $('body').removeClass('sock_bg');
+      });
 
-$('.contact').click(function() {
+}
+});
+
+  // about / info
+
+$('.info').click(function() {
   $('.about').toggleClass('showme');
   $('.header').toggleClass('font-white');
-  $('.contact').toggleClass('font-white');
-  $('img').toggleClass('hide_img_contact');
+  $('.info').toggleClass('font-white');
+  $('img').toggleClass('hide_img_info');
   $('html').toggleClass('white_cursor');
 });
 
 $('.about').click(function() {
   $('.about').removeClass('showme');
   $('.header').removeClass('font-white');
-  $('.contact').removeClass('font-white');
-  $('img').removeClass('hide_img_contact');
+  $('.info').removeClass('font-white');
+  $('img').removeClass('hide_img_info');
   $('html').removeClass('white_cursor');
 });
 
