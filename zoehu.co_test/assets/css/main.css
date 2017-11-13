@@ -7,20 +7,40 @@
 
 /* Start here */
 
+/* nav */
+
+.nav {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  font-family: helvetica;
+  font-size: 12px;
+}
+
+.nav div {
+  text-align: right;
+  margin-bottom: 10px;
+  cursor: url('../images/cursor_circle_white.png') 9 9, auto;
+}
 
 
-/* images */
+/* projects */
 
 .project_container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin-top: 50px;
+  width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
 }
 
 .project {
   padding: 40px;
+  margin-bottom: 100px;
 }
 
 .project img {
@@ -28,15 +48,11 @@
 }
 
 .col1of3 {
-  width: 50%;
-}
-
-.col1of2 {
-  width: 50%;
+  width: 100%;
 }
 
 
-/* page */
+/* bg */
 
 .whittakers_bg {
   background-color: #ff8e44;
@@ -62,16 +78,28 @@
   background-color: #000000;
 }
 
+.forum_bg {
+  background-color: #808080;
+}
+
+.spring_bg {
+  background-color: blue;
+}
+
+
+/* page */
+
 
 html {
   cursor: url('../images/cursor_circle.png') 9 9, auto;
 }
 
 body {
-  margin: 0 20px 0 20px;
+  margin: 0;
   padding: 0;
   background-color: white;
   text-transform: uppercase !important;
+  font-family: helvetica;
   z-index: 0;
   transition: 0.2s;
 }
@@ -86,20 +114,8 @@ body {
   z-index: 2;
 }
 
-.skills {
-  position: fixed;
-  bottom:20px;
-  right: 20px;
-  text-align: right;
-  font-size: 30px;
-}
 
-#time {
-  position: fixed;
-  right: 20px;
-  top: 20px;
-  font-size: 30px;
-}
+
 
 .font-white {
   color: white;
@@ -107,8 +123,8 @@ body {
 
 .info {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  bottom: 20px;
+  left: 20px;
   font-size: 30px;
   cursor: url('../images/cursor_circle_white.png') 9 9, auto;
   z-index: 2;
@@ -165,7 +181,19 @@ img.hide_img {
 
 @media screen and (max-width: 768px) {
     /* For mobile phones: */
-    .col1of3 {
+    .body {
+        margin: 20px;
+    }
+
+
+    .project_container {
         width: 100%;
+        margin: 0;
+        margin-top: 80px;
+    }
+
+    .project {
+        padding: 0px;
+        margin-bottom: 20px;
     }
 }
