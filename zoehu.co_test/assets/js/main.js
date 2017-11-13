@@ -37,6 +37,7 @@ $('.nav_mobile').click(function() {
 
 $('.nav_mobile_panel').click(function() {
   $(this).removeClass('show_nav_mobile');
+  $('.nav_mobile_panel').removeClass('font-black');
 });
 
 

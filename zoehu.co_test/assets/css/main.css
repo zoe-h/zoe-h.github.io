@@ -23,6 +23,10 @@ body {
   transition: 0.2s;
 }
 
+a {
+  color:inherit;
+  text-decoration: none;
+ }
 
 .header {
   position: fixed;
@@ -77,7 +81,7 @@ body {
   color: white;
   font-size: 30px;
   display: none;
-  z-index: 10;
+  z-index: 7;
 }
 
 .nav_mobile_panel {
@@ -110,7 +114,7 @@ body {
   top: -100vh;
   transition: 0.5s;
   background-color: black;
-  z-index: 5;
+  z-index: 10;
   padding: 20px;
 }
 
@@ -259,17 +263,7 @@ img.hide_img {
 @media screen and (max-width: 768px) {
     /* For mobile phones: */
     body {
-        margin: 20px;
-    }
 
-    .project_container {
-        width: 100%;
-        margin-top: 80px;
-    }
-
-    .project {
-        padding: 0px;
-        margin-bottom: 20px;
     }
 
     .nav {
@@ -285,5 +279,22 @@ img.hide_img {
       top: 20px;
       right: 20px;
       text-align: right;
+    }
+
+    .project_container {
+        width: 100%;
+        margin-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .project {
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+
+    .info_content {
+      width: 100%;
+      font-size: 30px;
     }
 }
