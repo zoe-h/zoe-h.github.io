@@ -2,13 +2,97 @@ $(document).ready(function() {
 
 // Add jQuery here
 
+//filter
+$('.nav .selected').click(function() {
+  $('.project').addClass('hide_project');
+  $('.project.selected').removeClass('hide_project');
+});
+
+$('.nav .motion').click(function() {
+  $('.project').addClass('hide_project');
+  $('.project.motion').removeClass('hide_project');
+});
+
+$('.nav .branding').click(function() {
+  $('.project').addClass('hide_project');
+  $('.project.branding').removeClass('hide_project');
+});
+
+$('.nav .print').click(function() {
+  $('.project').addClass('hide_project');
+  $('.project.print').removeClass('hide_project');
+});
+
+$('.nav .digital').click(function() {
+  $('.project').addClass('hide_project');
+  $('.project.digital').removeClass('hide_project');
+});
+
+//mobile filter
+
+$('.nav_mobile').click(function() {
+  $('.nav_mobile_panel').toggleClass('show_nav_mobile');
+  $(this).toggleClass('font-black');
+});
+
+$('.nav_mobile_panel').click(function() {
+  $(this).removeClass('show_nav_mobile');
+});
+
+
+$('.nav_mobile_panel .selected').click(function() {
+  $('.project').addClass('hide_project');
+  $('.project.selected').removeClass('hide_project');
+  $('.nav_mobile_panel').removeClass('show_nav_mobile');
+});
+
+$('.nav_mobile_panel .motion').click(function() {
+  $('.project').addClass('hide_project');
+  $('.project.motion').removeClass('hide_project');
+  $('.nav_mobile_panel').removeClass('show_nav_mobile');
+});
+
+$('.nav_mobile_panel .branding').click(function() {
+  $('.project').addClass('hide_project');
+  $('.project.branding').removeClass('hide_project');
+  $('.nav_mobile_panel').removeClass('show_nav_mobile');
+});
+
+$('.nav_mobile_panel .print').click(function() {
+  $('.project').addClass('hide_project');
+  $('.project.print').removeClass('hide_project');
+  $('.nav_mobile_panel').removeClass('show_nav_mobile');
+});
+
+$('.nav_mobile_panel .digital').click(function() {
+  $('.project').addClass('hide_project');
+  $('.project.digital').removeClass('hide_project');
+  $('.nav_mobile_panel').removeClass('show_nav_mobile');
+});
+
+// info
+
+  $('.info').click(function() {
+  $('.info_panel').toggleClass('show_info');
+  $('.header').toggleClass('font-white');
+  $('.info').toggleClass('font-white');
+  $('html').toggleClass('white_cursor');
+  });
+
+  $('.info_panel').click(function() {
+  $(this).removeClass('show_info');
+  $('.header').removeClass('font-white');
+  $('.info').removeClass('font-white');
+  $('html').removeClass('white_cursor');
+  });
+
 
  //image hover
 if(screen.width > 768) {
 
   $('#whittakers img').mouseenter(function() {
     $('img').addClass('hide_img');
-    $('#whittakers img').removeClass('hide_img');
+    $(this).removeClass('hide_img');
     $('body').addClass('whittakers_bg');
   });
 
@@ -96,28 +180,11 @@ if(screen.width > 768) {
    });
 
   return;
-} else {
+  } else {
+
+  };
 
 
-};
-
-  // about / info
-
-$('.info').click(function() {
-  $('.about').toggleClass('showme');
-  $('.header').toggleClass('font-white');
-  $('.info').toggleClass('font-white');
-  $('img').toggleClass('hide_img_info');
-  $('html').toggleClass('white_cursor');
-});
-
-$('.about').click(function() {
-  $('.about').removeClass('showme');
-  $('.header').removeClass('font-white');
-  $('.info').removeClass('font-white');
-  $('img').removeClass('hide_img_info');
-  $('html').removeClass('white_cursor');
-});
 
   // Header typewriter
 

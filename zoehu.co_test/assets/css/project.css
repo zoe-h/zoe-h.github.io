@@ -1,17 +1,8 @@
 
-/*  project colours */
-
-.bg_whittakers {
-  background-color: #ff8e44;
-}
 
 /* styling */
 
 .skills {
-  display: none;
-}
-
-#time {
   display: none;
 }
 
@@ -20,11 +11,9 @@
 }
 
 
-
-.description {
-  position: fixed;
-  width: 50%;
-  padding: 100px 50px 100px 100px;
+.project_info {
+  width: 400px;
+  text-align: center;
 }
 
 .project_name {
@@ -35,14 +24,12 @@
 
 .project_description {
   font-size: 15px;
+  text-transform: none;
 }
 
 .images {
-  position: absolute;
-  top: 15%;
-  margin-bottom: 100px;
-  left: 50%;
   width: 600px;
+  margin: auto;
 }
 
 .images img {
